@@ -1,0 +1,19 @@
+.borders {
+  border: 5px solid red;
+}
+.footer-section {
+  min-height: 200px;
+  background-color: teal;
+}
+.col {
+  height: 100%;
+}
+.footer-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px;
+}
+.fab {
+  padding: 10px 10px;
+}

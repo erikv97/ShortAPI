@@ -1,0 +1,9 @@
+.section-wrapper {
+  min-height: 200px;
+  background-color: red;
+}
+.card-information {
+  min-height: 200px;
+  background-color: purple;
+}
+/*  */

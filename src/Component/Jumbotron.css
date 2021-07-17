@@ -1,0 +1,30 @@
+.jumbotron {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.jumbotron-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.jumbotron-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.get-started-button {
+  background-color: teal;
+  color: white;
+  width: 40%;
+  border-radius: 20px;
+  border-color: transparent;
+}
+
+@media screen and (min-width: 1000px) {
+  .jumbotron-text {
+    font-size: 60px;
+    color: black;
+  }
+}

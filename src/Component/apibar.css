@@ -1,0 +1,26 @@
+.input-box {
+  background-color: #a88fd4;
+  padding: 4% 10%;
+  background-image: url(../image/bg-boost-desktop.svg);
+  border-radius: 5px;
+}
+
+.input-bar {
+  width: 100%;
+  border-radius: 6px;
+  padding: 7px 20px;
+}
+
+.input-button {
+  width: 100%;
+  margin: 20px 0px;
+  background-color: transparent;
+  border-color: transparent;
+  color: white;
+  background-color: #2cd0d1;
+  border-radius: 6px;
+  padding: 5px;
+}
+/* iphone X , XS, 11 Pro, 12 Mini */
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+}

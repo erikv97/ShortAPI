@@ -1,0 +1,39 @@
+$navbar-button-color: #a09fa7;
+$standar-black: black;
+$teal: #2cd0d1;
+$teal-faded: #9de1e0;
+
+.navbar-container {
+  position: absolute;
+}
+.navbar-button {
+  color: $navbar-button-color;
+
+  &:hover {
+    color: $standar-black;
+    cursor: pointer;
+  }
+}
+.shortly-button {
+  color: #504f57;
+}
+
+.button-login {
+  background-color: transparent;
+  border-color: transparent;
+  color: $navbar-button-color;
+  padding: 0px 5%;
+}
+
+.button-sign-up {
+  background-color: transparent;
+  border-color: transparent;
+  color: white;
+  background-color: $teal;
+  border-radius: 20px;
+  padding: 5px;
+
+  &:hover {
+    background-color: $teal-faded;
+  }
+}

@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import NavbarApp from "./Component/Navbar";
+import Jumbotron from "./Component/Jumbotron";
+import APIBar from "./Component/Apibar";
+import AdvancedStatistics from "./Component/Advanced-statistic";
+import BoostToday from "./Component/boost-today";
+import FooterPage from "./Component/footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <NavbarApp />
+      <Jumbotron />
+      <APIBar />
+      <AdvancedStatistics />
+      <BoostToday />
+      <FooterPage />
     </div>
   );
 }
