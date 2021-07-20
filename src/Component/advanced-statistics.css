@@ -1,9 +1,13 @@
 .section-wrapper {
   min-height: 200px;
-  background-color: red;
+  padding-top: 8rem !important;
 }
 .card-information {
   min-height: 200px;
-  background-color: purple;
 }
+
+h1 {
+  font-family: var(--body-font);
+}
+
 /*  */

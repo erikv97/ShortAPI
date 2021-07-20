@@ -1,9 +1,17 @@
 .jumbotron {
-  height: 100vh;
+  min-height: 50vh;
   display: flex;
   align-items: center;
+  background-color: transparent !important;
 }
-
+p {
+  font-family: var(--body-font);
+}
+h1 {
+  font-family: var(--body-font);
+  font-size: var(--h1-font-size);
+  font-weight: 900;
+}
 .jumbotron-text-wrapper {
   display: flex;
   flex-direction: column;
@@ -21,10 +29,8 @@
   border-radius: 20px;
   border-color: transparent;
 }
-
-@media screen and (min-width: 1000px) {
-  .jumbotron-text {
-    font-size: 60px;
-    color: black;
+@media (min-width: 576px) {
+  .jumbotron {
+    padding: 0rem 0rem;
   }
 }

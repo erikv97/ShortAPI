@@ -1,9 +1,10 @@
-.navbar-container {
-  position: absolute;
-}
-
 .navbar-button {
   color: #a09fa7;
+  font-weight: bold;
+}
+.navbar-container {
+  padding: 10px;
+  background-color: white;
 }
 
 .navbar-button:hover {
@@ -14,24 +15,8 @@
 .shortly-button {
   color: #504f57;
 }
-
-.button-login {
-  background-color: transparent;
-  border-color: transparent;
-  color: #a09fa7;
-  padding: 0px 5%;
-}
-
-.button-sign-up {
-  background-color: transparent;
-  border-color: transparent;
-  color: white;
-  background-color: #2cd0d1;
-  border-radius: 20px;
-  padding: 5px;
-}
-
 .button-sign-up:hover {
   background-color: #9de1e0;
 }
+
 /*# sourceMappingURL=navbar.css.map */

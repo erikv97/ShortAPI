@@ -1,8 +1,8 @@
 .input-box {
-  background-color: #a88fd4;
   padding: 4% 10%;
   background-image: url(../image/bg-boost-desktop.svg);
   border-radius: 5px;
+  background-color: hsl(257 27% 26% / 1);
 }
 
 .input-bar {
@@ -20,6 +20,9 @@
   background-color: #2cd0d1;
   border-radius: 6px;
   padding: 5px;
+}
+.container-api {
+  background: linear-gradient(180deg, white 50%, #eff1f7 50%);
 }
 /* iphone X , XS, 11 Pro, 12 Mini */
 @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
