@@ -1,6 +1,6 @@
 import React from "react";
 import "./boost-today.css";
-import { Container, Col, Row } from "reactstrap";
+import { Container } from "reactstrap";
 
 function BoostToday() {
   return (

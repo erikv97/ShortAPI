@@ -1,20 +1,19 @@
 import React from "react";
 import "./Jumbotron.css";
-import { Container, Row, Col } from "reactstrap";
 import illustrationworking from "../image/illustration-working.svg";
 
 function Jumbotron() {
   return (
     <div className="container">
-      <div class="jumbotron">
-        <div class="container">
+      <div className="jumbotron">
+        <div className="container">
           <div className="row">
             <div className="col-md-5 col-xs-12 jumbotron-text-wrapper">
-              <h1 class="jumbotron-text poppin-extrabold ">
+              <h1 className="jumbotron-text poppin-extrabold ">
                 More than just
                 <br /> short link
               </h1>
-              <p class="lead open-sans-grey ">
+              <p className="lead open-sans-grey ">
                 Build your own brand's recognition and get detailed insights on
                 how your links are performing.
               </p>

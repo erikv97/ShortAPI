@@ -1,7 +1,6 @@
 import React from "react";
 import "./footer.css";
 import { Container, Col, Row } from "reactstrap";
-import Logo from "../image/logo.svg";
 import LogoWhite from "../image/logo-dark.svg";
 
 function FooterPage() {
@@ -30,10 +29,10 @@ function FooterPage() {
             <p>Contact</p>
           </Col>
           <Col className="borders footer-icon" md={3}>
-            <i class="fab fa-youtube fa-2x"></i>
-            <i class="fab fa-instagram fa-2x"></i>
-            <i class="fab fa-youtube fa-2x"></i>
-            <i class="fab fa-instagram fa-2x"></i>
+            <i className="fab fa-youtube fa-2x"></i>
+            <i className="fab fa-instagram fa-2x"></i>
+            <i className="fab fa-youtube fa-2x"></i>
+            <i className="fab fa-instagram fa-2x"></i>
           </Col>
         </Row>
       </Container>
