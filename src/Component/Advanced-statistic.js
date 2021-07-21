@@ -21,9 +21,10 @@ function AdvancedStatistics() {
       <section className="card-information">
         <Container>
           <Row>
-            <Col md={4}>
+            <Col style={{ paddingLeft: "0px" }} md={4}>
               <section className="card-section">
                 <div class="card">
+                  <div class="circle"></div>
                   <div class="card-body">
                     <h5 class="card-title">Brand </h5>
                     <p class="card-text open-sans-grey">
@@ -38,6 +39,7 @@ function AdvancedStatistics() {
             <Col md={4}>
               <section className="card-section">
                 <div class="card">
+                  <div class="circle"></div>
                   <div class="card-body">
                     <h5 class="card-title">Detailed Records</h5>
                     <p class="card-text open-sans-grey">
@@ -49,9 +51,10 @@ function AdvancedStatistics() {
                 </div>
               </section>
             </Col>
-            <Col md={4}>
+            <Col style={{ paddingRight: "0px" }} md={4}>
               <section className="card-section">
                 <div class="card">
+                  <div class="circle"></div>
                   <div class="card-body">
                     <h5 class="card-title">Fully Customizable</h5>
                     <p class="card-text open-sans-grey">
@@ -63,6 +66,7 @@ function AdvancedStatistics() {
                 </div>
               </section>
             </Col>
+            <div className="lines"></div>
           </Row>
         </Container>
       </section>

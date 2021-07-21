@@ -12,7 +12,6 @@
   left: 50%;
   transform: translateX(-50%);
 }
-
 .card-section {
   min-height: 300px;
   display: flex;
@@ -21,11 +20,42 @@
 }
 .card {
   width: 25rem;
+  z-index: 2;
 }
-
 .card-information {
-  padding: 5rem 0rem;
+  padding-bottom: 10rem;
+}
+.card-body {
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 2.25rem !important;
 }
 .card-title {
   font-size: 1.5rem;
+  color: black;
+}
+
+.col-md-4:nth-child(2) {
+  top: 3rem;
+}
+.col-md-4:nth-child(3) {
+  top: 6rem;
+}
+.lines {
+  background-color: #2cd0d1;
+  min-height: 10px;
+  height: 10px;
+  width: 100%;
+  bottom: 7rem;
+  position: relative;
+  z-index: 1;
+}
+.circle {
+  height: 50px;
+  width: 50px;
+  background-color: hsl(257, 27%, 26%);
+  border-radius: 50%;
+  position: absolute;
+  top: -13%;
+  left: 10%;
 }

@@ -1,6 +1,7 @@
 .boost-section {
   min-height: 100px;
-  background-color: #a88fd4;
+  background-image: url(../image/bg-boost-desktop.svg);
+  background-color: hsl(257 27% 26% / 1);
 }
 
 .wrapper {
@@ -8,17 +9,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(../image/bg-boost-desktop.svg);
+
   flex-direction: column;
 }
 
-.get-started {
-  border-color: transparent;
-  color: white;
-  background-color: #2cd0d1;
-  border-radius: 20px;
-  padding: 5px;
-}
-.get-started :hover {
-  cursor: pointer;
+h3 {
+  color: white !important;
+  padding: 2rem;
 }

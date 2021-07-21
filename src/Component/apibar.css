@@ -24,6 +24,12 @@
 .container-api {
   background: linear-gradient(180deg, white 50%, #eff1f7 50%);
 }
+.apiRow {
+  background-color: white;
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 5px;
+}
 /* iphone X , XS, 11 Pro, 12 Mini */
 @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
 }

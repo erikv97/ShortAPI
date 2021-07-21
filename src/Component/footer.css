@@ -1,9 +1,11 @@
-.borders {
-  border: 5px solid red;
+p {
+  color: #bfbfbf;
 }
+
 .footer-section {
   min-height: 200px;
-  background-color: teal;
+  background-color: hsl(260, 8%, 14%) !important;
+  padding: 5rem;
 }
 .col {
   height: 100%;
@@ -16,4 +18,7 @@
 }
 .fab {
   padding: 10px 10px;
+}
+h5 {
+  color: white;
 }

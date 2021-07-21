@@ -8,7 +8,7 @@ function BoostToday() {
       <Container>
         <div className="wrapper">
           <h3>Boost our links today</h3>
-          <button className="get-started">Get Started</button>
+          <button className="button-round">Get Started</button>
         </div>
       </Container>
     </section>
