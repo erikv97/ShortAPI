@@ -4,11 +4,20 @@
   border-radius: 5px;
   background-color: hsl(257 27% 26% / 1);
 }
+.output-box {
+  padding: 4% 10%;
+  border-radius: 5px;
+}
 
 .input-bar {
   width: 100%;
   border-radius: 6px;
   padding: 7px 20px;
+}
+.z {
+  display: flex;
+  margin-left: auto;
+  padding: 0 4%;
 }
 
 .input-button {
@@ -21,6 +30,14 @@
   border-radius: 6px;
   padding: 5px;
 }
+.copy-button {
+  background-color: transparent;
+  border-color: transparent;
+  color: white;
+  background-color: #2cd0d1;
+  border-radius: 6px;
+  padding: 0.5% 8.5%;
+}
 .container-api {
   background: linear-gradient(180deg, white 50%, #eff1f7 50%);
 }
@@ -29,7 +46,23 @@
   padding: 1rem;
   margin: 0.5rem;
   border-radius: 5px;
+
+  display: flex;
+  align-items: center;
+}
+.shortRow {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 5px;
 }
 /* iphone X , XS, 11 Pro, 12 Mini */
 @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+}
+.danger {
+  color: red;
+  border-color: red;
+}
+::-webkit-input-placeholder {
+  color: red;
+  opacity: 0.5;
 }

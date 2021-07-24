@@ -1,29 +1,49 @@
 import React, { useState } from "react";
 import { Container, Col, Row } from "reactstrap";
 import "./apibar.css";
+
 // api fetch ================================
 
 function APIBar() {
   const [value, valueVariable] = useState("");
   const [apiList, updateMyArray] = useState([]);
+  const [urlCheck, checkUrl] = useState(true);
   // const api = "https://api.shrtco.de/v2/shorten?";
 
-  function apiCalls(e) {
+  function apiCalls() {
     console.log("api call function");
-
-    e.preventDefault();
     fetch(`https://api.shrtco.de/v2/shorten?url=${value}`)
       .then((response) => {
         return response.json();
       })
-      .then((users) => {
-        updateMyArray((arr) => [...arr, users]);
+      .then((newLink) => {
+        updateMyArray((arr) => [...arr, newLink]);
+      })
+      .catch(function () {
+        return console.log("error");
       });
   }
-
   const updateValue = (e) => {
     valueVariable(e.target.value);
   };
+
+  //Validate Form
+
+  function validateEmail(z) {
+    z.preventDefault();
+    let error;
+    if (!value) {
+      error = "Required";
+    } else if (value.includes("www.") == false) {
+      checkUrl(false);
+      console.log(urlCheck);
+    } else if (value.includes("www.") == true) {
+      checkUrl(true);
+      console.log();
+      return apiCalls(urlCheck);
+    }
+  }
+
   console.log(apiList);
 
   return (
@@ -39,25 +59,31 @@ function APIBar() {
                     className="input-bar"
                     type="text"
                   />
+                  <div>{urlCheck ? "" : <p>Not a valid url</p>}</div>
                 </Col>
 
                 <div className="col-3 d-flex align-items-center justify-content-center">
-                  <button className="input-button" onClick={apiCalls}>
+                  <button className="input-button" onClick={validateEmail}>
                     Shorten it
                   </button>
                 </div>
               </div>
               <Row>
                 {apiList.map((e) => (
-                  <Col className="apiRow" xs={12}>
-                    {e.result.short_link} <p>{e.result.original_link}</p>
-                  </Col>
+                  <>
+                    <Col className="apiRow">
+                      {e.result.original_link}
+                      <div className="z"> {e.result.short_link}</div>
+                      <button className="copy-button">Copy</button>
+                    </Col>
+                  </>
                 ))}
               </Row>
             </form>
           </div>
         </div>
       </div>
+      {/* FORMIK TEST */}
     </Container>
   );
 }
